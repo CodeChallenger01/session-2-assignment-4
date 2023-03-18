@@ -59,7 +59,7 @@ class TraitTypeClassTest extends AnyFlatSpec with Matchers {
   }
 
   //It Check with the Position another than parameter and gives Negative Result
-  "Position" should "not match with Position of x and y after converting to String after  " in {
+  "Position" should "not match with Position of x and y after converting to String after passing" in {
     val actualOutput = position.positionShow.show(position)
     val expectedOutput = "Pos(x: 1, y: 0)"
     assert(actualOutput != expectedOutput)
